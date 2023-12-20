@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a = 10;
+        let b = 20;
+        let c = 30;
+        if(a>b && a<c) {
+            console.log(a)
+        } else if(b>a && b>c) {
+            console.log(b)
+        }else if (c>a && c>b) {
+            console.log(c)
+        }else if (a==b && a==c) {
+            console.log("semua bilangan sama") ;
+        }
+
+
+        //saklar
+        let saklar = 1;
+
+        if (saklar == 1) {
+            console.log("ON")
+        }else if (saklar == 0) {
+            console.log("OFF")
+        }else {
+            console.log("Masukkan angka 1 atau 0")
+        }
+
+        //nomor 2
+        let bil = 1
+
+        if (bil %2==1) {
+            console.log("Ganjil")
+        }else if (bil %2==0) {
+            console.log("Genap")
+        }
+
+        let bill = 1
+        if (bil <0) {
+            console.log("Bilangan Negatif")
+        } else if (bil >0) {
+            console.log("Bilangan Positif")
+        }
+
+        //nomor 4
+        let harga1 = Number(prompt ("Masukkan harga barang pertama"))
+        let harga2 = Number(prompt ("Masukkan harga barang kedua"))
+        let harga3 = Number(prompt ("Masukkan harga barang ketiga"))
+
+        let total = harga1 + harga2 + harga3
+
+        if (total >100000) {
+            let diskon = total *0.1
+            let bayar = total - diskon
+            console.log("Total harga:" + total )
+            console.log("Diskon 10%:" + diskon)
+            console.log("Harga setelah diskon:" + bayar)
+        }else
+             {
+            let diskon = 0
+            let bayar = total - diskon
+            console.log("Total harga:" + total )
+            console.log("Tidak ada diskon" )
+            console.log("Harga setelah diskon:" + bayar)
+        }
+
+        //nomor 5
+        let lembur = 3;
+
+        if (lembur <6) {
+            console.log("gaji lembur Rp 100.000")
+        }else if (lembur >6) {
+            console.log("gaji lembur Rp 300.000")
+        }else if (lembur =6) {
+            console.log("gaji lembur Rp 200.000")
+        }
+
+        //nomor 6
+        let PintuAir = 500;
+
+        if (PintuAir <=500) {
+            console.log("Aman")
+        }else if (PintuAir >=500 && PintuAir <=600) {
+            console.log("Waspada")
+        }else if (PintuAir >=600 && PintuAir <=650) {
+            console.log("Siaga2")
+        }else if (PintuAir >650) {
+            console.log("Siaga1")
+        }
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
